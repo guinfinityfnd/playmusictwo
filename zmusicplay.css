@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: #ffffff;
+    font-size: 50px;
+    text-align:center;
+    margin-bottom: 20px;
+    user-select: none;
+}
+h1:hover{
+    text-decoration: underline;
+    text-decoration-color: mediumblue;
+    margin-top: 10px;
+    cursor:no-drop;
+}
+.container{
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.palyButtons{
+    margin-top:50px;
+    cursor: pointer;
+    user-select: none;
+}
+.controls{
+    margin:0px 10px;
+    font-size: 30px;
+    padding-right: 50px;
+}
+.pauseButton{
+    display: none;
+}
+.songs{
+    margin-bottom: 30px;
+}
+.trackItem{
+    margin-bottom:20px;
+    user-select: none;
+    cursor: pointer;
+}
+.trackItem:hover{
+    color: lightseagreen;
+}
+#progressBar{
+    /* box-sizing: border-box; */
+    border:2px solid rgb(245, 237, 237);   
+    width: 500px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    height: 5px;
+}
+#currentProgress{
+    width: 0px;
+    height: 100%;
+    background-color: #fa0000;
+}
+.currentTime{
+    cursor:not-allowed;
+    user-select: none;
+}
+@media(max-width:1024px){
+    h1{
+        color: red;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .container{
+        color: green;
+    }
+    #progressBar{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+    }
+    #currentProgress{
+        background-color: purple;
+    }
+    .currentTime{
+        color: rgb(236, 221, 5);
+        font-size: 40px;
+    }
+    .container{
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #forMobile{
+        height: 100vh;
+        color:black;
+        font-size: 15px;
+    }
+    .trackItem{
+        font-size: 100%;
+    }
+    .palyButtons{
+        user-select: none;
+    }
+    .palyButtons{
+       margin-top: 20px;        
+    }
+}

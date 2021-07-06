@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Play for All</title>
+    <script src="https://kit.fontawesome.com/bfc3ef21f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="zmusicplay.css">
+    <link rel="short icon" href="#">
+</head>
+<body>
+    <h1>Musics for You</h1>
+    <div id="forMobile">
+        <div class="container">
+            <div class="songs"></div>
+            <div class="foraudios">
+                <audio src="" class="audioes">
+                    your browser does not support this audio.
+                </audio>
+            </div>
+            <div class="currentTime">00:00/00:00</div>
+            <div id="progressBar">
+                <div id="currentProgress"></div>
+            </div>
+            <div class="palyButtons">
+                <i class="fas fa-step-backward controls previousButton"></i>
+                <i class="fas fa-play-circle controls playButton"></i>
+                <i class="fas fa-pause-circle controls pauseButton"></i>
+                <i class="fas fa-step-forward controls nextButton"></i>
+            </div>
+        </div>
+    </div>   
+    <script src="zmusicplay.js"></script>
+</body>
+</html>
